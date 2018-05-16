@@ -1,4 +1,8 @@
 #!/bin/bash
-mkdir builds
+set -e
+
+VERSION=$(jq -r ".version" src/manifest.json)
+
+mkdir build
 cd src
-zip -r ../builds/gmail-rightlabel-0.0.1.0.zip .
+zip -r ../build/gmail-rightlabel-${VERSION}.zip .

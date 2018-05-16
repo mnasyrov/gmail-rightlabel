@@ -1,4 +1,32 @@
-.ar.as {
-	padding: 0px 0px 1px 5px;
-	float: right;
+/*** Gmail new design May 2018 ***/
+
+/* Label block */
+.yi {
+    margin-left: 8px;
+    order: 1;
+    flex-direction: row-reverse;
+}
+
+/*** Gmail Classic ***/
+/* Label block */
+.yi {
+    float: right;
+}
+
+.yi .ar {
+    float: right;
+}
+
+/*** Gmail HTML fallback ***/
+
+/* Label block */
+table.th span.ts font[size="1"] {
+    float: right;
+    line-height: 1.8em;
+    margin-left: 8px;
+}
+
+/* Attachment icon */
+table.th img.p {
+    margin-left: 8px;
 }

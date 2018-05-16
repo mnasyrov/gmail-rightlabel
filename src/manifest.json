@@ -1,9 +1,9 @@
 {
 	"name": "Gmail RightLabel",
-	"version": "0.0.1.0",
+	"version": "0.0.2.0",
 	"manifest_version": 2,
 
-	"description": "This extension moves labels in email subjects to the right side.",
+	"description": "This extension moves labels of email subjects to the right side.",
 
 	"permissions": [
 		"https://mail.google.com/*"
