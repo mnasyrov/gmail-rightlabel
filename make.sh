@@ -2,7 +2,9 @@
 set -e
 
 VERSION=$(jq -r ".version" src/manifest.json)
+FILENAME="gmail-rightlabel-${VERSION}.zip"
 
-mkdir build
+mkdir -p build
+test -f build/${FILENAME} && rm build/${FILENAME}
 cd src
-zip -r ../build/gmail-rightlabel-${VERSION}.zip .
+zip -r ../build/${FILENAME} .
